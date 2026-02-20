@@ -1,0 +1,307 @@
+body{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.center{
+    text-align: center;
+}
+
+.pt-50{
+    padding-top: 50px;
+}
+
+.aqua-color{
+    color: aqua;
+}
+
+.aqua-border{
+    border-bottom: 1px dotted aqua;
+}
+
+#totalPrice{
+    text-align: center;
+}
+
+.red-color{
+    color: red;
+}
+
+.text-green{
+    color: green;
+}
+
+#cartIcon{
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color: #000;
+    padding: 5px 0px;
+    margin: -10px;
+}
+
+.nav div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav div a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.all-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.alone-card{
+    border: 3px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 25px 5px 5px 5px;
+    width: 41.3%;
+    box-shadow: 3px 3px 10px silver;
+}
+
+.homeBtns{
+    width: 100%;
+    background-color: #121212;
+    border: 2px dotted white;
+    color: #fff;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.homeBtns:hover{
+    background-color: transparent;
+    border: 2px dotted aqua;
+    color: aqua;
+}
+
+.checkOut{
+    margin: 35px 0px;
+    padding: 20px;
+    background-color: transparent;
+    color: aqua;
+    border: 2px dashed aqua;
+    border-radius: 17px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.checkOut:hover{
+    color: white;
+    border: 2px dashed white;
+}
+
+.heading{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    border: 3px dashed #fff ;
+    font-size: 2rem;
+    padding: 30px;
+    margin: 10px;
+}
+
+.result-card{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 4px 4px 12px silver;
+    border-radius: 10px;
+    margin: 20px;    
+}
+
+.order-btn{
+    background-color: rgb(62, 28, 255);
+    color: white;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 0px 0px 20px 0px;
+    font-size: 1rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.order-btn:hover{
+    background-color: #121212;
+    border: 2px dotted aqua;
+    color: aqua;
+}
+
+.price-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.perchase-btn{
+    padding: 8px 20px;
+    background-color: transparent;
+    color: aqua;
+    border: 2px dashed aqua;
+    border-radius: 16px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.perchase-btn:hover{
+    color: white;
+    border: 2px dashed white;
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -15px;
+}
+
+.mini-btns{
+    padding: 5px 10px;
+    background-color: transparent;
+    color: aqua;
+    border: 2px dashed aqua;
+    border-radius: 8px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.mini-btns:hover{
+    color: white;
+    border: 2px dashed white;
+}
+
+.big-btns{
+    margin-top: 5px;
+    background-color: rgb(62, 28, 255);
+    color: white;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    gap: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.big-btns:hover{
+    background-color: #121212;
+    border: 2px dotted aqua;
+    color: aqua;
+}
+
+.two-btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.w-img{
+    width: 22%;
+}
+
+.sold-card{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 4px 4px 12px silver;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.error{
+    text-align: center;
+    padding: 25px 0px;
+    word-spacing: 5px;
+    font-family: sans-serif;
+    cursor: col-resize;
+}
+
+@media (max-width: 827px) {
+
+    .nav{
+        margin: -20px;
+    }
+    .nav div{
+        gap: 30px;
+    }
+    .all-cards{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .alone-card{
+        width: 80%;
+    }
+    .result-card{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .heading{
+        font-size: 1.5rem;
+        padding: 20px;
+        margin: 5px;
+    }
+    .price-div{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .perchase-btn{
+        margin-bottom: 20px;
+    }
+    .w-img{
+        width: 30%;
+    }
+    .error{
+        font-size: x-large;
+    }
+
+}
+
+@media (max-width: 727px) {
+
+    .nav div a{
+        display: none;
+    }
+    .big-btns{
+        margin-bottom: 10px;
+    }
+    .w-img{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .w-img{
+        width: 60%;
+    }
+    .error{
+        font-size: large;
+    }
+
+}
+
